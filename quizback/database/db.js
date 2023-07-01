@@ -4,7 +4,6 @@ function connectDb()
 {
 
     mongoose.Promise = global.Promise
-    // mongoose.connect("mongodb+srv://ashwin0953:Ashwin09531@cluster0.n3dmt07.mongodb.net/test", { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
     mongoose.connect("mongodb://localhost:27017/quiz", { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
     const con = mongoose.connection
     con.on('open', () => {
